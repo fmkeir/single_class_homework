@@ -8,4 +8,12 @@ class SportsTeam
   def team_name
     return @team_name
   end
+
+  def players
+    return @players
+  end
+
+  def coach_name
+    return @coach_name
+  end
 end

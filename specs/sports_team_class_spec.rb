@@ -18,4 +18,12 @@ class TestSportsTeam < Minitest::Test
   def test_get_team_name
     assert_equal("Denver Broncos", @sports_team.team_name)
   end
+
+  def test_get_players
+    assert_equal(["Von Miller", "Chris Harris Jr.", "Drew Lock"], @sports_team.players)
+  end
+
+  def test_get_coach_name
+    assert_equal("Vic Fangio", @sports_team.coach_name)
+  end
 end
