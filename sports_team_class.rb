@@ -7,4 +7,8 @@ class SportsTeam
     @players = players_array
     @coach_name = coach_name
   end
+
+  def add_player(new_player)
+    @players.push(new_player)
+  end
 end

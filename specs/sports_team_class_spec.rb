@@ -31,4 +31,9 @@ class TestSportsTeam < Minitest::Test
     @sports_team.coach_name = "Bill Billerson"
     assert_equal("Bill Billerson", @sports_team.coach_name)
   end
+
+  def test_add_player
+    @sports_team.add_player("Steve Rogers")
+    assert_equal(4, @sports_team.players.length)
+  end
 end
