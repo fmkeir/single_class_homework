@@ -38,7 +38,7 @@ class TestSportsTeam < Minitest::Test
   end
 
   def test_player_on_team__true
-    assert_equal(true, @sports_team.player_on_team("Von Miller"))
+    assert_equal(true, @sports_team.player_on_team("Chris Harris Jr."))
   end
 
   def test_player_on_team__false
