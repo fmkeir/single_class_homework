@@ -8,3 +8,8 @@ class TestStudent < Minitest::Test
     @student1 = Student.new("Bill", "E37")
     @student2 = Student.new("Hamish", "G1")
   end
+
+  def test_get_student_name
+    assert_equal("Bill", @student1.name())
+  end
+end
