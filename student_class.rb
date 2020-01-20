@@ -7,4 +7,8 @@ class Student
   def name
     return @name
   end
+
+  def cohort
+    return @cohort
+  end
 end
