@@ -14,4 +14,8 @@ class TestSportsTeam < Minitest::Test
       ],
       "Vic Fangio")
   end
+
+  def test_get_team_name
+    assert_equal("Denver Broncos", @sports_team.team_name)
+  end
 end
