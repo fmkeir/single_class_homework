@@ -44,4 +44,14 @@ class TestSportsTeam < Minitest::Test
   def test_player_on_team__false
     assert_equal(false, @sports_team.player_on_team("Tony Stark"))
   end
+
+  def test_win_or_loss__win
+    @sports_team.update_points("win")
+    assert_equal(1, @sports_team.points)
+  end
+
+  def test_win_or_loss__loss
+    @sports_team.update_points("loss")
+    assert_equal(0, @sports_team.points)
+  end
 end
